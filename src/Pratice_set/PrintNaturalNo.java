@@ -43,6 +43,8 @@ public class PrintNaturalNo {
           fact =fact*i;
       }
       System.out.println("factorial = " +fact);
+
+      System.out.println("hello");
    }
 
 }
