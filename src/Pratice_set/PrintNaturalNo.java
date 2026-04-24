@@ -8,7 +8,7 @@ public class PrintNaturalNo {
      //print 1 to 10 number
         // int num = 10;
         // for(int i=num;i>=1;i--){
-        // System.out.println(i); 
+        // System.out.println(i);
 
 // }
      //print all even number in 20
