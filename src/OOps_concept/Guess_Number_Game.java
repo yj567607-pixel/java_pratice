@@ -3,7 +3,7 @@ package OOps_concept;
 import java.util.*;
 
 class Game {
-    private int number;
+    final private int number;
     private int guess;
     private int attempts = 0;
 
@@ -14,16 +14,14 @@ class Game {
 
     void playGame() {
         Scanner sc = new Scanner(System.in);
-        boolean correct = false;
-
-        while (!correct) {
+        while (true) {
             System.out.print("Enter guess: ");
             guess = sc.nextInt();
             attempts++;
 
             if (guess == number) {
                 System.out.println(" Correct in " + attempts + " attempts");
-                correct = true;
+                break;
             } else if (guess < number) {
                 System.out.println("Too low");
             } else {
